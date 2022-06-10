@@ -65,15 +65,15 @@ resource profiles_profilename_name_staticwebapp_staticwebapp 'Microsoft.Cdn/prof
   properties: {
     enabledState: 'Enabled'
     enforceCertificateNameCheck: true
-    hostName: staticSites_swa_name_resource.properties.defaultHostName
+    hostName: staticSites_swa_name_resource.properties.defaultHostname
     httpPort: 80
     httpsPort: 443
-    originHostHeader: staticSites_swa_name_resource.properties.defaultHostName
+    originHostHeader: staticSites_swa_name_resource.properties.defaultHostname
     priority: 1
     weight: 1000
   }
   dependsOn: [
-    profiles_profilename_name_resource
+    staticSites_swa_name_resource
   ]
 }
 
@@ -98,7 +98,4 @@ resource profiles_profilename_name_endpointname_default_route 'Microsoft.Cdn/pro
       'Https'
     ]
   }
-  dependsOn: [
-    profiles_profilename_name_resource
-  ]
 }
