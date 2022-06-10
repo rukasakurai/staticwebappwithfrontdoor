@@ -19,7 +19,7 @@ resource staticSites_swa_name_resource 'Microsoft.Web/staticSites@2021-03-01' = 
   name: staticSites_swa_name
   properties: {
     allowConfigFileUpdates: true
-    branch: 'master'
+    branch: 'main'
     enterpriseGradeCdnStatus: 'Disabled'
     provider: 'GitHub'
     repositoryUrl: 'https://github.com/rukasakurai/staticwebappwithfrontdoor'
