@@ -8,6 +8,7 @@ cd staticwebappwithfrontdoor
 ```
 RG=<ResourceGroupName>
 LOCATION="japaneast"
+az account set --subscription <SubscriptionID>
 az group create --name $RG --location $LOCATION
 az deployment group create --resource-group $RG --template-file main.bicep
 ```
