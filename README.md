@@ -1,4 +1,4 @@
-# staticwebappwithfrontdoor
+# Azure Static Web App with Front Door
 ## Deploying using Bicep
 Using bash
 ```
@@ -7,7 +7,8 @@ cd staticwebappwithfrontdoor
 ```
 ```
 RG=<ResourceGroupName>
-LOCATION="Japan East"
+LOCATION="japaneast"
+az account set --subscription <SubscriptionID>
 az group create --name $RG --location $LOCATION
 az deployment group create --resource-group $RG --template-file main.bicep
 ```
