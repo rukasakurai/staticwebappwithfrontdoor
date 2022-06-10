@@ -65,10 +65,10 @@ resource profiles_profilename_name_staticwebapp_staticwebapp 'Microsoft.Cdn/prof
   properties: {
     enabledState: 'Enabled'
     enforceCertificateNameCheck: true
-    hostName: 'victorious-ground-04b6ddb10.1.azurestaticapps.net'
+    hostName: staticSites_swa_name_resource.properties.defaultHostName
     httpPort: 80
     httpsPort: 443
-    originHostHeader: 'victorious-ground-04b6ddb10.1.azurestaticapps.net'
+    originHostHeader: staticSites_swa_name_resource.properties.defaultHostName
     priority: 1
     weight: 1000
   }
