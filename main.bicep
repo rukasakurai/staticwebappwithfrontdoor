@@ -73,7 +73,7 @@ resource profiles_profilename_name_staticwebapp_staticwebapp 'Microsoft.Cdn/prof
     weight: 1000
   }
   dependsOn: [
-    staticSites_swa_name_resource
+    profiles_profilename_name_resource
   ]
 }
 
@@ -98,4 +98,7 @@ resource profiles_profilename_name_endpointname_default_route 'Microsoft.Cdn/pro
       'Https'
     ]
   }
+  dependsOn: [
+    profiles_profilename_name_resource
+  ]
 }
